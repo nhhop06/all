@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+.container {
+    
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.test-postion:hover {
+    width: 800px ;
+    height: 200px ;
+    border-radius: 20px ;
+    position: absolute;
+    border:1px solid black ;
+    background-color: aliceblue;
+    top: -5px;
+    
+}
+
+.anime-picture {
+    max-width: 100%;
+    width: calc(40% - 5px);
+}
+
+.anime-description {
+    width: calc(60% - 5px);
+}
+
+.anime {
+    display: flex;
+    
+}
+
+.list-post {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.post {
+    height: 85px ;
+    display: flex ;
+    overflow: hidden;
+}
+
+.post:hover {
+    box-shadow: 0 5px 10px rgb(180, 175, 175);
+}
+
+.post-link {
+    display: flex ;
+    text-decoration: none;
+}
+
+.post-description {
+    padding: 20px;
+    color: rgb(17, 16, 16);
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: rgb(17, 16, 16);
+}
+.tieude h1 {
+    font-size: 45px ;
+    display:flex ;
+    color: red;
+    background-color: aliceblue;
+    overflow: hidden;
+   
+    
+}
+.tieudee h1 {
+    font-size: 45px ;
+    color: aliceblue;
+    background-color: red;
+    border-right: 3px black solid ;
+
+}
+.logoo {
+    background-color: red;
+    display: flex ;
+    width: 224px;
+    height:30px ;
+    margin-bottom: 10px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.naver {
+    position: relative;
+    display: flex;
+    gap: 30px ;
+    margin-bottom:20px ;
+    padding-left: 10px ;
+}
+.list {
+    display: flex ;
+    flex-wrap: wrap;
+    border: solid 2px black ;
+    border-radius:15px ;
+    padding: 5px ;
+    
+}
+.list-anime {
+    border: 1px solid rgb(0, 0, 0) ;
+    display: flex;
+    position: relative;
+    border-radius: 25px ;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 300px;
+    height:170px ;
+}
+.list-anime:hover {
+    box-shadow:  0 5px 10px rgba(240, 248, 255, 0.352);
+}
+.newep {
+    display: flex;
+    gap: 30px ;
+    flex-wrap: wrap;
+}
+.tieude-newep {
+    margin-left: 0px ;
+    margin-top: 30px ;
+    margin-bottom: 30px ;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.newep-pic {
+    width: 300px ;
+}
+.newep-pic:hover {
+    zoom: 100%;
+    transition: 1s ;
+    transform: scale(2);
+    justify-content: center;
+ 
+}
+.newep-post {
+    display: flex ;
+    overflow: hidden;
+
+}
+
+.postion-name {
+    position: absolute;
+    width: 450px;
+    height: 170px ;
+    top:140px ;
+    left:10px ;
+    display: flex;
+    
+
+
+}
+.viewanime {
+    display: flex ;
+}
+.tenanime {
+    display: flex;
+    
+}
+.tintuc-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px ;
+
+}
+.tieude-tintuc {
+    margin-left: 0px ;
+    margin-bottom: 30px ;
+    margin-top: 30px ;
+}
+.tintuc {
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 320px;
+    height: 120px ;
+    
+}
+.tintuc-pic img:hover {
+    box-shadow: 0 5px 10px gray;
+}
+.tintuc-pic img  {
+    width: 180px ;
+    height: 100px;
+}
+.tintuc-caption {
+    display: flex;
+    position: absolute;
+    right: 15px ;
+}
+.cartoon-list {
+    border: 1px solid rgb(0, 0, 0) ;
+    display: flex;
+    border-radius: 35px 35px 10px 10px ;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 220px;
+    height: 110px ;
+}
+.cartoon-pic img {
+    width: 220px ;
+    height: 110px ;
+}
+.cartoon-pic img:hover {
+   box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.362);
+    zoom: 110% ;
+}
+.cartoon-list:hover {
+    background-color: rgba(255, 255, 255, 0.362);
+}
+.cartoon-name {
+    position: absolute;
+    left: 10px ;
+    bottom: 10px ;
+    color: white;
+    line-height: 8px ;
+}
+.all-cartoon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px ;
+}
+.all-truyentranh {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px ;
+}
+.list-truyentranh {
+    border: 1px solid rgb(0, 0, 0) ;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 158px;
+    height: 208px ;
+}
+.list-truyentranh img :hover {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.352);
+}
+.truyentranh-pic img:hover {
+    box-shadow:0 5px 10px rgba(255, 255, 255, 0.352);
+}
+.truyentranh-pic img {
+    width: 158px ;
+    height: 208px ;
+    
+}
+.tentruyen {
+    background-color: rgba(56, 51, 51, 0.515);
+    color: white;
+    position: absolute;
+    bottom: 3px ;
+    left: 3px ;
+
+}
+.chaptruyen {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    color: aliceblue;
+    background-color: rgba(72, 66, 66, 0.537);
+    border:solid rgb(0, 0, 0) 1px ;
+    border-radius: 5px ;
+
+}
+.all-dexuat {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+}
+.dexuat {
+    display: flex;
+    position: relative;
+    overflow: hidden;    
+    border: 1px solid black ;
+    gap: 30px;
+    width:1000px ;
+    gap: 30px;
+}
+.dexuat-picip {
+    height: 83px ;
+    position: absolute;
+    right: 0px ;
+    bottom: 0px ;
+    border:1px solid black ;
+
+}
+.dexuat-pic {
+    overflow: hidden;
+    
+    border:1px solid black ;
+    
+}
+.papa {
+    padding-right: 30px ;
+    border:1px solid black ;
+}
+.bosuutap {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    width:1000px ;
+    gap:10px ;
+    flex-wrap: wrap;
+    
+}
+.bosuutap-pic img {
+    width: 240px ;
+
+}
+a .bosuutap-pic img :hover{
+    background-color: white ;
+}
+.anime-movie {
+    display: flex ;
+    gap: 10px ;
+} 
+.all-movie {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+.movie-list {
+    border: 1px solid black;
+    position: relative;
+
+
+}
+.tenmovie {
+    position: absolute;
+        left: 5px ;
+    bottom: 5px ;
+    color: white;
+    background-color: rgba(43, 40, 40, 0.567);
+
+}
+.ranking {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.rank-list {
+    position: relative;
+    display: flex;
+    border: 1px black solid ;
+}
+.rank-pic img{
+    width: 156px ;
+}
+.rank-name {
+    color: aliceblue;
+    background-color: rgba(57, 54, 54, 0.603);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+.xemthem a {
+    border: 1px black solid ;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(185, 2, 2);
+}
+.box-xemthem {
+    margin-top: 30px ;
+    
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+ul {
+    border: 2px black solid ;
+    list-style: none ;
+    margin: 0 ;
+    padding: 0 ;
+    overflow: hidden;
+    background-color: rgb(232, 52, 52);
+    top: 0
+}
+li:first-child {
+    border-left: none;
+}
+li {
+    float: left;
+    border-right: black solid 3px;
+
+}
+li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px ;
+}
+li a:hover {
+  color: rgb(255, 255, 255);
+  background-color: #a10a0a;
+  font-weight: bold;
+}
+

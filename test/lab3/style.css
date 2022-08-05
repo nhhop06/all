@@ -1,0 +1,27 @@
+ul {
+    border: 2px black solid ;
+    list-style: none ;
+    margin: 0 ;
+    padding: 0 ;
+    overflow: hidden;
+    background-color: rgb(232, 52, 52);
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0
+}
+li {
+    float: left;
+    border-right : solid 3px black ;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px ;
+}
+li a:hover:active {
+  color: rgb(255, 255, 255);
+  background-color: #a10a0a;
+  font-weight: bold;
+}

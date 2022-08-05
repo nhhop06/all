@@ -1,0 +1,35 @@
+
+.logo {
+    background-color: #0F1C3F;
+    border: #456BD9 3px solid;
+    border-radius: 50%;
+    height: 5em ;
+    width: 5em;
+
+}
+#avatar {
+
+    border-radius: 50%;
+    border: solid cyan ;
+    overflow: hidden;
+    height: 70px;
+    width: 70px;
+    
+
+}
+#cangiua {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    padding-bottom: 30px;
+    padding-top: 2px;
+
+
+}
+image .cantrai {
+    text-align: left;
+}
+.cachlink{
+    padding-right: 15px;
+    text-decoration: none;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postion</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        * {
+            position: relative;
+        }
+        .btn-scroll a {
+            position: fixed;
+            right: 20px ;
+            bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black ;
+            border-radius:35px 35px 35px 35px ;
+            width: 70px ;
+            height: 70px ;
+            background-color: aqua;
+            
+        }
+      .container {
+        position: relative;
+      }
+      .box {
+        border: 1px solid pink;
+        border-radius: 30px 30px 30px 30px;
+        color: white;
+        width: 100px;
+        height: 100px;
+      }
+      .boxy {
+        border: 1px solid pink;
+        border-radius: 0px 50px 50px 0px;
+        position: absolute;
+        left: 70px;
+        color: white;
+        width: 100px;
+        height: 100px;
+        top: 55px;
+        left: 105px;
+        transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+        -o-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+      }
+      .boxz {
+        color: white;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 90px;
+        left: 70px;
+        transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+        -o-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+      }
+      .boxx {
+        position: absolute;
+        border: 1px solid pink;
+        border-radius: 50px 50px 0px 0px;
+        color: white;
+        top: 55px;
+        left: 35px;
+        width: 100px;
+        height: 100px;
+        transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        -webkit-transform: rotate(315deg);
+        -o-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+      }
+
+      .boxm {
+        color: white;
+      }
+      .box-bigger {
+        color: white;
+        width: 500px;
+        height: 500px;
+      }
+      .relative {
+        position: relative;
+      }
+      .absolute {
+        position: absolute;
+
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        bottom: 0px;
+      }
+      .fixed {
+        position: -webkit-sticky;
+      }
+      .bg-red {
+        background-color: rgba(255, 0, 0, 0.46);
+      }
+      .bg-green {
+        background-color: green;
+      }
+      .bg-yellow {
+        background-color: yellow;
+      }
+      .bg-pink {
+        background-color: pink;
+      }
+      .bg-black {
+        background-color: black;
+      }
+      .bg-blue {
+        background-color: blue;
+      }
+      .menu {
+        display: flex;
+      }
+      .menu-item {
+        position: relative;
+        border: 1px solid black;
+
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      .menu-item:hover .sub-menu {
+        display: block ;
+
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        list-style: none;
+      }
+      .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background-color: aquamarine;
+        
+      }
+      .sub-menu:hover {
+        display: block;
+      }
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0 ;
+        background-color: aquamarine;
+        margin-bottom: 50px;
+      }
+      .sub-link {
+        min-width: 150%;
+      }
+      .arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+
+  border-bottom: 5px solid black;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">Home</a>
+                                 <div class="arrow-up"></div>
+                                 <ul class="sub-menu">
+                                    <li class="sub-item">
+                                        <a href="" class="sub-link">Mobile</a>
+                                    </li>
+                                    <li class="sub-item">
+                                        <a href="" class="sub-link">Laptop</a>
+                                    </li>
+                                    <li class="sub-item">
+                                        <a href="" class="sub-link">Dress</a>
+                                    </li>
+                                    <li class="sub-item">
+                                        <a href="" class="sub-link">nothing</a>
+                                    </li>
+                                </ul>
+
+
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+      <div class="container">
+        <div class="boxx bg-pink"></div>
+        <div class="boxy bg-pink"></div>
+        <div class="boxz bg-pink"></div>
+        
+.
+      
+    </header>
+        <div class="btn-scroll">
+            <a href="file:///C:/Users/DELL/Desktop/B%C3%A0i%20tr%C3%AAn%20L%E1%BB%9Bp/Bu%E1%BB%95i%206/tes/index.html">⚽</a>
+        </div>
+   
+</div>
+  </body>
+</html>

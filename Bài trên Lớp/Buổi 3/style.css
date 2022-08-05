@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.item {
+    border: 5px solid rgb(0, 0, 0) ;
+    width: 400px ;
+    height: 100px;
+    background-color: aliceblue;
+    overflow: hidden;
+    padding: 20px ;
+    line-height: 0%;
+}
+.picture {
+    display: flex;
+    width:50% ;
+}
+.tieude-blog {
+    gap: 10px;
+}

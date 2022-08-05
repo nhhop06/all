@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    /* Gioi han kich thuoc trong vung chua */
+    max-width: 100%;
+    /* Loai bo phan chan dong (khoang trang nho o duoi hinh anh) */
+    vertical-align: middle;
+    height: auto;
+}
+.bg-img {
+    width: 100% ;
+    height: 457px ;
+}
+.nav {
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    display: flex;
+}
+.tieude {
+    margin-left: 50px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px ;
+}
+.dieuhuong {
+    margin-right: 50px ;
+}
+.dieuhuong a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 100px ;
+    padding-left: 8px ;
+    
+    margin-right: 7px ;
+    font-size: 20px ;
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Loai bo khoang trong 2 cot ngoai cung */
+    margin-left: -5px;
+    margin-right: -5px;
+
+    /* Dat khoang trong giua cac hang */
+    row-gap: 10px;
+}
+
+.row > * {
+    /* Dat khoang trong giua cac cot */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-1 {
+    flex: 0 1 8.333333%;
+}
+
+.col-2 {
+    flex: 0 1 16.666667%;
+}
+
+.col-3 {
+    flex: 0 1 25%;
+}
+
+.col-4 {
+    flex: 0 1 33.333333%;
+}
+
+.col-5 {
+    flex: 0 1 41.666667%;
+}
+
+.col-6 {
+    flex: 0 1 50%;
+}
+
+.col-7 {
+    flex: 0 1 58.333333%;
+}
+
+.col-8 {
+    flex: 0 1 66.666667%;
+}
+
+.col-9 {
+    flex: 0 1 75%;
+}
+
+.col-10 {
+    flex: 0 1 83.333333%;
+}
+
+.col-11 {
+    flex: 0 1 91.666667%;
+}
+
+.col-12 {
+    flex: 0 1 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}

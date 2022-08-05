@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vuighe.net</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:image/png;base64,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">
+  </head>
+
+  <body>
+    <header >
+    </header>
+    <nav >
+        <ul><li><div class="logoo">
+          <div class="tieude">
+            <h1>Vui</h1>
+          </div>
+          <div class="tieudee"><h1>
+            Ghe.Net
+          </h1></div>
+        </div></li>
+            <li><a href="">Anime</a></li>
+            <li><a href="">Movie</a></li>
+            <li><a href=""> Anime News</a> </li>
+            <li><a href=""> Manga</a></li>
+            <li><a href=""> Top Anime </a></li>
+        </ul>
+      
+    </nav>
+    <div class="container">
+              <div class="tieude-newep">
+        <a class="tieude-newep" href="">
+          <h2>FOR YOU PAGE></h2>
+        </a>
+      </div>
+
+        <div class="all-dexuat">
+            <div class="dexuat">
+                <div class="dexuat-pic">
+                    <a href="">
+                        <img src="https://vuighe.net/mmo/slider-htnt.jpg" 
+                        alt=""
+                        width="679">
+                    </a>
+                                 
+                </div>
+                    <div class="dexuat-pic">
+                        <a href="">
+                            <img src="https://s199.imacdn.com/vg/2022/06/20/59bb771aecaf5712_cb994190a63755c9_35448316557078149118684.jpg"
+                            alt=""
+                            width="291"
+                            height="85">
+                        </a>
+                    </div>   
+                    <div class="dexuat-picip">
+                        <a href="">
+                            <img src="https://s199.imacdn.com/vg/2022/06/20/59bb771aecaf5712_cb994190a63755c9_35448316557078149118684.jpg"
+                            alt=""
+                            width="291"
+                            height="85">
+                        </a>
+                 </div>
+                    
+
+
+                </div>
+               <div class="papa">
+                        <a href="">
+                            <img src="https://s199.imacdn.com/vg/2022/06/20/59bb771aecaf5712_cb994190a63755c9_35448316557078149118684.jpg"
+                            alt=""
+                            width="291"
+                            height="85">
+                        </a>
+                    </div>                    
+                    <div class="papa">
+                        <a href="">
+                            <img src="https://s199.imacdn.com/vg/2022/06/20/59bb771aecaf5712_cb994190a63755c9_35448316557078149118684.jpg"
+                            alt=""
+                            width="291"
+                            height="85">
+                        </a>
+                    </div>
+                    <div class="dexuat-pic">
+                        <a href="">
+                            <img src="https://s199.imacdn.com/vg/2022/06/20/59bb771aecaf5712_cb994190a63755c9_35448316557078149118684.jpg"
+                            alt=""
+                            width="291"
+                            height="85">
+                        </a>
+                    </div> 
+                
+            </div>
+
+        
+
+
+
+
+      <div class="tieude-newep">
+        <a class="tieude-newep" href="">
+          <h2>TẬP MỚI NHẤT></h2>
+        </a>
+      </div>
+      <div class="newep">
+        <div class="list-anime">
+          <div class="postion-name">
+            <div class="tenanime">
+              <h3>Seven Death - EP.15</h3>
+            </div>
+          </div>
+
+          <div class="newep-post">
+            <a href="" class="post-link">
+              <div class="newep-pic">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/07/22/2a6542481493919a_8a772861853595ea_2730116584746493118684.jpg"
+                  alt="Native Queries trong Spring Data JPA"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="list-anime">
+          <div class="postion-name">
+            <div class="tenanime">
+              <h3>Seven Death - EP.15</h3>
+            </div>
+          </div>
+
+          <div class="newep-post">
+            <a href="" class="post-link">
+              <div class="newep-pic">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/07/22/2a6542481493919a_8a772861853595ea_2730116584746493118684.jpg"
+                  alt="Native Queries trong Spring Data JPA"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="list-anime">
+          <div class="postion-name">
+            <div class="tenanime">
+              <h3>Seven Death - EP.15</h3>
+            </div>
+          </div>
+
+          <div class="newep-post">
+            <a href="" class="post-link">
+              <div class="newep-pic">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/07/22/2a6542481493919a_8a772861853595ea_2730116584746493118684.jpg"
+                  alt="Native Queries trong Spring Data JPA"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="list-anime">
+          <div class="postion-name">
+            <div class="tenanime">
+              <h3>Seven Death - EP.15</h3>
+            </div>
+          </div>
+
+          <div class="newep-post">
+            <a href="" class="post-link">
+              <div class="newep-pic">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/07/22/2a6542481493919a_8a772861853595ea_2730116584746493118684.jpg"
+                  alt="Native Queries trong Spring Data JPA"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="list-anime">
+          <div class="postion-name">
+            <div class="tenanime">
+              <h3>Seven Death - EP.15</h3>
+            </div>
+          </div>
+
+          <div class="newep-post">
+            <a href="" class="post-link">
+              <div class="newep-pic">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/07/22/2a6542481493919a_8a772861853595ea_2730116584746493118684.jpg"
+                  alt="Native Queries trong Spring Data JPA"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="list-anime">
+          <div class="postion-name">
+            <div class="tenanime">
+              <h3>Seven Death - EP.15</h3>
+            </div>
+          </div>
+
+          <div class="newep-post">
+            <a href="" class="post-link">
+              <div class="newep-pic">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/07/22/2a6542481493919a_8a772861853595ea_2730116584746493118684.jpg"
+                  alt="Native Queries trong Spring Data JPA"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="list-anime">
+          <div class="postion-name">
+            <div class="tenanime">
+              <h3>Seven Death - EP.15</h3>
+            </div>
+          </div>
+
+          <div class="newep-post">
+            <a href="" class="post-link">
+              <div class="newep-pic">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/07/22/2a6542481493919a_8a772861853595ea_2730116584746493118684.jpg"
+                  alt="Native Queries trong Spring Data JPA"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="list-anime">
+          <div class="postion-name">
+            <div class="tenanime">
+              <h3>Seven Death - EP.15</h3>
+            </div>
+          </div>
+
+          <div class="newep-post">
+            <a href="" class="post-link">
+              <div class="newep-pic">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/07/22/2a6542481493919a_8a772861853595ea_2730116584746493118684.jpg"
+                  alt="Native Queries trong Spring Data JPA"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="list-anime">
+          <div class="postion-name">
+            <div class="tenanime">
+              <h3>Seven Death - EP.15</h3>
+            </div>
+          </div>
+
+          <div class="newep-post">
+            <a href="" class="post-link">
+              <div class="newep-pic">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/07/22/2a6542481493919a_8a772861853595ea_2730116584746493118684.jpg"
+                  alt="Native Queries trong Spring Data JPA"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tieude-tintuc">
+        <a href="">
+          <h2>NEWS</h2>
+        </a>
+      </div>
+
+      <div class="tintuc-list">
+        <div class="tintuc">
+          <div class="tintuc-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/ta/2022/07/22/a40f650240771b4c_91ef2fe526677e4f_4336116585052787185710.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tintuc-caption">
+            Kagami no Kojo<br />-Phía Sau<br />Tấm Gương
+          </div>
+        </div>
+        <div class="tintuc">
+          <div class="tintuc-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/ta/2022/07/22/a40f650240771b4c_91ef2fe526677e4f_4336116585052787185710.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tintuc-caption">
+            Kagami no Kojo<br />-Phía Sau<br />Tấm Gương
+          </div>
+        </div>
+        <div class="tintuc">
+          <div class="tintuc-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/ta/2022/07/22/a40f650240771b4c_91ef2fe526677e4f_4336116585052787185710.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tintuc-caption">
+            Kagami no Kojo<br />-Phía Sau<br />Tấm Gương
+          </div>
+        </div>
+        <div class="tintuc">
+          <div class="tintuc-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/ta/2022/07/22/a40f650240771b4c_91ef2fe526677e4f_4336116585052787185710.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tintuc-caption">
+            Kagami no Kojo<br />-Phía Sau<br />Tấm Gương
+          </div>
+        </div>
+        <div class="tintuc">
+          <div class="tintuc-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/ta/2022/07/22/a40f650240771b4c_91ef2fe526677e4f_4336116585052787185710.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tintuc-caption">
+            Kagami no Kojo<br />-Phía Sau<br />Tấm Gương
+          </div>
+        </div>
+        <div class="tintuc">
+          <div class="tintuc-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/ta/2022/07/22/a40f650240771b4c_91ef2fe526677e4f_4336116585052787185710.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tintuc-caption">
+            Kagami no Kojo<br />-Phía Sau<br />Tấm Gương
+          </div>
+        </div>
+        <div class="tintuc">
+          <div class="tintuc-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/ta/2022/07/22/a40f650240771b4c_91ef2fe526677e4f_4336116585052787185710.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tintuc-caption">
+            Kagami no Kojo<br />-Phía Sau<br />Tấm Gương
+          </div>
+        </div>
+        <div class="tintuc">
+          <div class="tintuc-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/ta/2022/07/22/a40f650240771b4c_91ef2fe526677e4f_4336116585052787185710.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tintuc-caption">
+            Kagami no Kojo<br />-Phía Sau<br />Tấm Gương
+          </div>
+        </div>
+        <div class="tintuc">
+          <div class="tintuc-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/ta/2022/07/22/a40f650240771b4c_91ef2fe526677e4f_4336116585052787185710.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tintuc-caption">
+            Kagami no Kojo<br />-Phía Sau<br />Tấm Gương
+          </div>
+        </div>
+      </div>
+
+      <div class="tieude-tintuc">
+        <a href="">
+          <h2>CARTOON></h2>
+        </a>
+      </div>
+      <div class="all-cartoon">
+        <div class="cartoon-list">
+          <div class="cartoon-pic">
+            <a class="cartoon-pic" href="">
+              <img
+                src="https://s198.imacdn.com/ff/2021/02/20/214199df846ec0be_30a65d21fedd8bb8_667261613823016216068.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="cartoon-name">
+            <h3>Đấu La Đại Lục</h3>
+            <br />
+            <small> 10.m view</small>
+          </div>
+        </div>
+        <div class="cartoon-list">
+          <div class="cartoon-pic">
+            <a class="cartoon-pic" href="">
+              <img
+                src="https://s198.imacdn.com/ff/2021/02/20/214199df846ec0be_30a65d21fedd8bb8_667261613823016216068.jpg"
+                alt=""
+
+              />
+            </a>
+          </div>
+          <div class="cartoon-name">
+            <h3>Đấu La Đại Lục</h3>
+            <br />
+            <small> 10.m view</small>
+          </div>
+        </div>
+        <div class="cartoon-list">
+          <div class="cartoon-pic">
+            <a class="cartoon-pic" href="">
+              <img
+                src="https://s198.imacdn.com/ff/2021/02/20/214199df846ec0be_30a65d21fedd8bb8_667261613823016216068.jpg"
+                alt=""
+
+              />
+            </a>
+          </div>
+          <div class="cartoon-name">
+            <h3>Đấu La Đại Lục</h3>
+            <br />
+            <small> 10.m view</small>
+          </div>
+        </div>
+        <div class="cartoon-list">
+          <div class="cartoon-pic">
+            <a class="cartoon-pic" href="">
+              <img
+                src="https://s198.imacdn.com/ff/2021/02/20/214199df846ec0be_30a65d21fedd8bb8_667261613823016216068.jpg"
+                alt=""
+
+              />
+            </a>
+          </div>
+          <div class="cartoon-name">
+            <h3>Đấu La Đại Lục</h3>
+            <br />
+            <small> 10.m view</small>
+          </div>
+        </div>
+        <div class="cartoon-list">
+          <div class="cartoon-pic">
+            <a class="cartoon-pic" href="">
+              <img
+                src="https://s198.imacdn.com/ff/2021/02/20/214199df846ec0be_30a65d21fedd8bb8_667261613823016216068.jpg"
+                alt=""
+
+              />
+            </a>
+          </div>
+          <div class="cartoon-name">
+            <h3>Đấu La Đại Lục</h3>
+            <br />
+            <small> 10.m view</small>
+          </div>
+        </div>
+        <div class="cartoon-list">
+          <div class="cartoon-pic">
+            <a class="cartoon-pic" href="">
+              <img
+                src="https://s198.imacdn.com/ff/2021/02/20/214199df846ec0be_30a65d21fedd8bb8_667261613823016216068.jpg"
+                alt=""
+
+              />
+            </a>
+          </div>
+          <div class="cartoon-name">
+            <h3>Đấu La Đại Lục</h3>
+            <br />
+            <small> 10.m view</small>
+          </div>
+        </div>
+        <div class="cartoon-list">
+          <div class="cartoon-pic">
+            <a class="cartoon-pic" href="">
+              <img
+                src="https://s198.imacdn.com/ff/2021/02/20/214199df846ec0be_30a65d21fedd8bb8_667261613823016216068.jpg"
+                alt=""
+
+              />
+            </a>
+          </div>
+          <div class="cartoon-name">
+            <h3>Đấu La Đại Lục</h3>
+            <br />
+            <small> 10.m view</small>
+          </div>
+        </div>
+        <div class="cartoon-list">
+          <div class="cartoon-pic">
+            <a class="cartoon-pic" href="">
+              <img
+                src="https://s198.imacdn.com/ff/2021/02/20/214199df846ec0be_30a65d21fedd8bb8_667261613823016216068.jpg"
+                alt=""
+
+              />
+            </a>
+          </div>
+          <div class="cartoon-name">
+            <h3>Đấu La Đại Lục</h3>
+            <br />
+            <small> 10.m view</small>
+          </div>
+        </div>
+      </div>
+      <div class="tieude-tintuc">
+        <a href="">
+          <h2>MANGA></h2>
+        </a>
+      </div>
+
+      <div class="all-truyentranh">
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>One Piece</h3>
+          </div>
+          <div class="chaptruyen">Chap 69</div>
+        </div>
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>One Piece</h3>
+          </div>
+          <div class="chaptruyen">Chap 69</div>
+        </div>
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>One Piece</h3>
+          </div>
+          <div class="chaptruyen">Chap 69</div>
+        </div>
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>One Piece</h3>
+          </div>
+          <div class="chaptruyen">Chap 69</div>
+        </div>
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>One Piece</h3>
+          </div>
+          <div class="chaptruyen">Chap 69</div>
+        </div>
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/tt24/2020/02/28/8d6d35f1c174751e_35b873941cbe1e6f_52428158288498841.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>One Piece</h3>
+          </div>
+          <div class="chaptruyen">Chap 69</div>
+        </div>
+      </div>
+            <div class="tieude-tintuc">
+        <a href="">
+          <h2>BỘ SƯU TẬP ></h2>
+        </a>
+      </div>
+      <div class="bosuutap">
+        <div class="bosuutap-pic">
+          <a href="">
+            <img src="https://s199.imacdn.com/vg/2022/06/10/09dd799dff4a355b_a6b32d115628ac50_40892165484315239674.jpg" 
+            alt="">
+          </a>
+        </div>
+        <div class="bosuutap-pic">
+          <a href="">
+            <img src="https://s199.imacdn.com/vg/2022/03/05/803583cba5d569c2_3c4ab828e8e763bd_117964164647297779674.jpg" 
+            alt="">
+          </a>
+        </div>
+        <div class="bosuutap-pic">
+          <a href="">
+            <img src="https://s199.imacdn.com/vg/2021/12/27/447d92824ddb9779_f3207425776138e9_98651164059040319674.jpg" 
+            alt="">
+          </a>
+        </div>
+        <div class="bosuutap-pic">
+          <a href="">
+            <img src="https://s199.imacdn.com/vg/2021/09/29/819d6a79cd97836d_6bc30ef29cbd18e5_173292163292978929674.jpg" 
+            alt="">
+          </a>
+        </div>                        
+      </div>
+            <div class="tieude-tintuc">
+        <a href="">
+          <h2> ANIME MOVIE ></h2>
+        </a>
+      </div>
+      <div class="anime-movie">
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/vg/2022/05/17/43fe43de19a7e9a0_46caf64600e28459_3566916527819018118684.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>Dragon Ball Super</h3>
+          </div>
+        </div>        
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/vg/2022/05/17/43fe43de19a7e9a0_46caf64600e28459_3566916527819018118684.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>Dragon Ball Super</h3>
+          </div>
+        </div>              
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/vg/2022/05/17/43fe43de19a7e9a0_46caf64600e28459_3566916527819018118684.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>Dragon Ball Super</h3>
+          </div>
+        </div>     
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/vg/2022/05/17/43fe43de19a7e9a0_46caf64600e28459_3566916527819018118684.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>Dragon Ball Super</h3>
+          </div>
+        </div>     
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/vg/2022/05/17/43fe43de19a7e9a0_46caf64600e28459_3566916527819018118684.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>Dragon Ball Super</h3>
+          </div>
+        </div> 
+        <div class="list-truyentranh">
+          <div class="truyentranh-pic">
+            <a href="">
+              <img
+                src="https://s199.imacdn.com/vg/2022/05/17/43fe43de19a7e9a0_46caf64600e28459_3566916527819018118684.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="tentruyen">
+            <h3>Dragon Ball Super</h3>
+          </div>
+        </div> 
+        
+        
+      </div>
+            <div class="tieude-tintuc">
+        <a href="">
+          <h2> HÔM NAY XEM GÌ ></h2>
+        </a>
+      </div> 
+      <div class="all-movie">
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2015/05/koufuku-graffiti-large-1432285082.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Koufuku Graffiti</h3></div>
+        </div>
+        
+        </div>
+        <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2015/05/koufuku-graffiti-large-1432285082.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Koufuku Graffiti</h3></div>
+        </div>
+        
+        </div>
+        <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2015/05/koufuku-graffiti-large-1432285082.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Koufuku Graffiti</h3></div>
+        </div>
+        
+        </div>
+        <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2015/05/koufuku-graffiti-large-1432285082.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Koufuku Graffiti</h3></div>
+        </div>
+        
+        </div>
+        <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2015/05/koufuku-graffiti-large-1432285082.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Koufuku Graffiti</h3></div>
+        </div>
+        
+        </div>
+        <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2015/05/koufuku-graffiti-large-1432285082.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Koufuku Graffiti</h3></div>
+        </div>
+        
+        </div>
+        <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2015/05/koufuku-graffiti-large-1432285082.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Koufuku Graffiti</h3></div>
+        </div>
+        
+        </div>
+        <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2015/05/koufuku-graffiti-large-1432285082.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Koufuku Graffiti</h3></div>
+        </div>
+        
+        </div>
+        
+      </div>
+                  <div class="tieude-tintuc">
+        <a href="">
+          <h2> ANIME MOVIE ></h2>
+        </a>
+      </div>
+      <div class="ranking">
+        <div class="rank-list">
+          <div class="rank-pic">
+            <a href="">
+              <img src="https://s199.imacdn.com/vg/2019/07/26/6c040a27770ec024_ded1b5147578648e_5019215641124505185710.jpg" 
+              alt="">
+            </a>
+            <div class="rank-name"><h3>Conan The Movie</h3></div>
+          </div>
+        </div>
+        <div class="rank-list">
+          <div class="rank-pic">
+            <a href="">
+              <img src="https://s199.imacdn.com/vg/2019/07/26/6c040a27770ec024_ded1b5147578648e_5019215641124505185710.jpg" 
+              alt="">
+            </a>
+            <div class="rank-name"><h3>Conan The Movie</h3></div>
+          </div>
+        </div>
+        <div class="rank-list">
+          <div class="rank-pic">
+            <a href="">
+              <img src="https://s199.imacdn.com/vg/2019/07/26/6c040a27770ec024_ded1b5147578648e_5019215641124505185710.jpg" 
+              alt="">
+            </a>
+            <div class="rank-name"><h3>Conan The Movie</h3></div>
+          </div>
+        </div>
+        <div class="rank-list">
+          <div class="rank-pic">
+            <a href="">
+              <img src="https://s199.imacdn.com/vg/2019/07/26/6c040a27770ec024_ded1b5147578648e_5019215641124505185710.jpg" 
+              alt="">
+            </a>
+            <div class="rank-name"><h3>Conan The Movie</h3></div>
+          </div>
+        </div>
+        <div class="rank-list">
+          <div class="rank-pic">
+            <a href="">
+              <img src="https://s199.imacdn.com/vg/2019/07/26/6c040a27770ec024_ded1b5147578648e_5019215641124505185710.jpg" 
+              alt="">
+            </a>
+            <div class="rank-name"><h3>Conan The Movie</h3></div>
+          </div>
+        </div>
+        <div class="rank-list">
+          <div class="rank-pic">
+            <a href="">
+              <img src="https://s199.imacdn.com/vg/2019/07/26/6c040a27770ec024_ded1b5147578648e_5019215641124505185710.jpg" 
+              alt="">
+            </a>
+            <div class="rank-name"><h3>Conan The Movie</h3></div>
+          </div>
+        </div>
+        
+      </div>
+                        <div class="tieude-tintuc">
+        <a href="">
+          <h2> ANIME WORLD ></h2>
+        </a>
+      </div>
+ <div class="all-movie">
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div><div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      <div class="movie-list">
+        <div class="bosuutap-pic">
+          <a  href="">
+            <img src="https://s199.imacdn.com/vg/2022/07/05/92370a5e42a1ecf7_e99d4d6e08007db3_2382216569557584118684.jpg" 
+            alt="">
+          </a>
+          <div class="tenmovie"> <h3> Mashle </h3></div>
+        </div>
+      </div>
+      
+ </div>
+ <div class="box-xemthem">
+    <div class="xemthem">
+      <a href="">
+      <small>xem thêm </small>
+    </a>
+    </div>
+</div>
+
+
+
+        
+        
+      </div>
+  </body>
+</html>

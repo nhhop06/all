@@ -1,0 +1,685 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    /* Gioi han kich thuoc trong vung chua */
+    max-width: 100%;
+    /* Loai bo phan chan dong (khoang trang nho o duoi hinh anh) */
+    vertical-align: middle;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Loai bo khoang trong 2 cot ngoai cung */
+    margin-left: -5px;
+    margin-right: -5px;
+
+    /* Dat khoang trong giua cac hang */
+    row-gap: 10px;
+}
+
+.row > * {
+    /* Dat khoang trong giua cac cot */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-1 {
+    flex: 0 1 8.333333%;
+}
+
+.col-2 {
+    flex: 0 1 16.666667%;
+}
+
+.col-3 {
+    flex: 0 1 25%;
+}
+
+.col-4 {
+    flex: 0 1 33.333333%;
+}
+
+.col-5 {
+    flex: 0 1 41.666667%;
+}
+
+.col-6 {
+    flex: 0 1 50%;
+}
+
+.col-7 {
+    flex: 0 1 58.333333%;
+}
+
+.col-8 {
+    flex: 0 1 66.666667%;
+}
+
+.col-9 {
+    flex: 0 1 75%;
+}
+
+.col-10 {
+    flex: 0 1 83.333333%;
+}
+
+.col-11 {
+    flex: 0 1 91.666667%;
+}
+
+.col-12 {
+    flex: 0 1 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.header {
+
+    left: 0px ;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    z-index: 1000 ;
+    width: 100% ;
+    height: 75px ;
+}
+.banner {
+    display: flex;
+
+    padding-left: 40px ;
+}
+.logo {
+    width: 220px ;
+}
+.logo img {
+    padding-top: 15px ;
+    width: 150px ;
+}
+.menu {
+    padding-top: 25px ;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px ;
+}
+.menu a {
+    
+    text-decoration: none;
+    color: black;
+    padding-left: 10px ;
+    padding-right: 10px;
+}
+.mini-menu {
+    padding-top: 15px ;
+    height: 30px ;
+    border: 1px solid gray ;
+    margin-left: 5px ;
+    margin-right: 5px ;
+    padding-top: 5px ;
+    border-radius: 25px ;
+}
+.mini-menu:hover {
+    border: 1px solid gray ;
+    height: 70px;
+    overflow: hidden;
+    background-color: white;
+
+}
+.header {
+    overflow: hidden;
+    border-bottom: 1px solid gray ;
+    padding-bottom: 10px ;
+}
+.container-search {
+    position: relative;
+    margin-top: 15px ;
+    width: fit-content ;
+    height: 30px ;
+    overflow: hidden;
+
+}
+#search {
+    width: 255px;
+    height: 30px;
+    outline: none;
+    border: #000000 solid 1px;
+    border-radius: 20px ;
+    padding-left: 10px ;
+}
+.icon {
+    position: absolute;
+    right: 5px ;
+    top: 5px;
+    margin: 0px;
+}
+.icon a {
+    text-decoration: none;
+}
+.box-search {
+    background-color: white;
+    padding-top: 5px ;
+    width: 455px ;
+}
+ul {
+    list-style: none;
+}
+
+.menu-item {
+    width: 100px ;
+    margin-left: 10px ;
+    margin-right: 10px;
+    border: 1px solid gray;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px ;
+}
+
+.menu-link {
+    display: block;
+
+    padding-left: 15px ;
+    padding-top: 5px; 
+    background-color: rgb(255, 255, 255);
+    color: gray;
+    text-decoration: none;
+}
+
+.sub-link {
+
+    
+    display: block;
+    padding: 10px 20px;
+    background-color: white;
+    color: gray;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    border: 1px solid gray ;
+    height: 70px ;
+    background-color: white ;
+    overflow: visible;
+}
+.menu-item:hover .sub-menu {
+    display:block;
+}
+
+
+
+.menu-item:hover .angle-top {
+    display: block;
+}
+
+.sub-menu {
+    /* mặc định ẩn sub-menu đi, chỉ hiển thị khi hover */
+    display: none;
+
+    /* Đặt position để những nội dung bên dưới không bị ảnh hưởng */
+    position: absolute;
+    left: -200px ;
+    margin-top: 10px ;
+    
+    
+
+    background: rgb(255, 255, 255);
+    border: #000000 1px solid;
+    width: 1200px;
+    height: 95px ;
+    margin-top: 31px ;
+    overflow: hidden;
+}
+.sub-item {
+    width: 100% ;
+}
+.sub-item img {
+    width: 100% ;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-item:hover .sub-menu {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    padding-top: 10px;
+    width: 100% ; 
+    margin: 0px;
+    margin-right: 10px  ;
+
+}
+.sub-item:hover .subsub-menu {
+    display: flex;
+}
+.subsub-item a {
+    display: flex;
+
+    padding: 10px 20px;
+    background-color: white;
+    color: gray;
+    text-decoration: none;
+}
+.sub-item:hover .sub-link{
+    zoom: 110%;
+    scale: 1.2;
+      
+}
+.subsub-menu {
+        /* mặc định ẩn sub-menu đi, chỉ hiển thị khi hover */
+    display: none;
+
+    /* Đặt position để những nội dung bên dưới không bị ảnh hưởng */
+    position: absolute;
+
+    top:  0px;
+    left: 100%;
+    
+
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    overflow: hidden;
+}
+.top-2 {
+    top: -48px ;
+}
+.top-3 {
+    top: -86px ;
+}
+.top-4 {
+    top: -124px;
+}
+.top-5 {
+    top: -162px;
+}
+.top-6 {
+    top: -200px  ;
+}
+.top-7 {
+    top: -238px ;
+}
+.top-8 {
+    top: -276px ;
+}
+.top-9 { 
+    top: -314px;
+}
+.top-10 {
+    top: -352px ;
+}
+.top-11 {
+    top: -390px ;
+}
+.top-12 {
+    top:-428px;
+}
+.left-1 { 
+    left: -320px ;
+}
+.left-2 {
+    left: -440px ;
+}
+.left-3 {
+    left: -560px ;
+}
+.left-4 {
+    left: -680px ;
+}
+.main-movie iframe {
+    margin-top: 100px ;
+    width: 100% ;
+    height: 500px ;
+
+}
+.adside{
+    width: 100% ;
+    height:500px ;
+    margin-left: 10px ;
+    margin-top: 100px ;
+    border: 1px solid gray;
+}
+.tieude-ep {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px ;
+    position: relative;
+    margin-bottom: 5px ;
+    border-bottom: 1px solid gray ;
+
+}
+.title-dst {
+    padding-top: 10px ;
+    padding-bottom: 5px ;
+    padding-left: 3px ;
+    
+}
+.title-dst:hover:active {
+    border-bottom: orangered 3px solid;
+}
+
+.title-bl {
+    margin-right: 5px ;
+    padding-top: 10px ;
+}
+.tieude-ep a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+}
+.sotap {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom:10px ;
+    border-bottom: gray 1px solid;
+}
+#sotap {
+    padding-top:5px ;
+    margin-right:5px ;
+    width: 100% ;
+    height: 20px ;
+    
+    padding-bottom: 5px ;
+}
+.sotap-boxmini {
+    gap: 3px ;
+    display: flex;
+    width: 25% ;
+}
+.ep {
+    padding-top: 5px ;
+    display: flex;
+}
+.ep:hover .tap {
+    border: 2px dotted red ;
+    
+}
+
+.ep:hover .tieude-tap {
+    color: red;
+}
+.tap img {
+    width: 100% ;
+}
+.tap {
+    border: 1px solid gray ;
+    width: 60% ;
+    margin-right: 3px ;
+    overflow: hidden;
+}
+.box-ep {
+    padding-top: 5px ;
+    padding-left: 5px ;
+    padding-right: 5px;
+
+}
+.luotxem {
+    margin-top: 5px ;
+    font-size: 12px ;
+    color: gray;
+}
+.movie-des {
+    width: 833px ;
+}
+.btn-play {
+  display: none;
+  border: 1px solid black;
+  background-color: rgba(128, 128, 128, 0.604);
+  border-radius: 70% ;
+  width: 40px ;
+  height: 40px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px ;
+  left: 10px ;
+}
+.btn-play:hover {
+  box-shadow:   0px  0px 10px rgb(255, 255, 255) ;
+  zoom: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.movie {
+    display: flex;
+    position: relative;
+    border: 1px solid black ;
+    overflow: hidden;
+}
+.movie:hover .btn-play{
+    display: block;
+}
+.movie:hover .anh-movie {
+    transform: scale(1.2);
+}
+.anh-movie {
+    margin-bottom: -10px ;
+}
+.movie-meta {
+    color: rgb(0, 0, 0);
+    width: 95% ;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 2px ;
+    left:5px ;
+}
+.ten-newep {
+    
+    display: flex;
+    position: absolute;
+    
+}
+.tieude-movie {
+    background-color: rgba(128, 128, 128, 0.355);
+    color: aliceblue;
+    bottom: 20px ;
+    left: 5px ;
+    display: flex;
+    position: absolute;
+}
+.news {
+    display: flex;
+}
+.new-content {
+    margin-bottom: -10px;
+}
+.news-pic {
+    margin-bottom: -10px ;
+    width: 80% ;
+}
+.top-pic {
+    width: 25% ;
+}
+.news:hover {
+    background-color: aliceblue;
+}
+.cartoon-pic {
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    border-radius: 35px 35px 15px 15px  ;
+    position: relative;
+    margin-left: 5px ;
+    margin-right: 5px ;   
+}
+.cartoon-pic img {
+    margin-bottom: -10px;
+}
+.cartoon-content {
+    color: aliceblue;
+    background-color: rgba(128, 128, 128, 0.396);
+    position: absolute;
+    bottom: 15px ;
+    left: 10px ;
+
+}
+.cartoon-list {
+    width: 100%;
+}
+.cartoon {
+    margin-bottom: 10px ;
+    display: flex;
+}
+.manga-ep {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    border-radius: 15px ;
+    overflow: hidden;
+    margin-left: 5px ;
+    margin-right: 5px ;
+}
+.manga-ep img {
+    margin-bottom: -10px ;
+}
+.collect {
+    border: 1px solid black ;
+}
+.collect-pic {
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    position: relative;
+    margin-left: 5px ;
+    margin-right: 5px ;
+}
+.collect-pic img {
+    margin-bottom: -10px ;
+}
+.cartoon-pic img {
+    margin-bottom: 10px ;
+}
+.manga-chap {    
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    overflow: hidden;
+    margin-left: 5px ;
+    margin-right: 5px ;
+}
+.bxh-pic {
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    position: relative;
+    margin-left: 5px ;
+    margin-right: 5px ;   
+}
+.topanime-box {
+    position: relative;
+    border: 1px rgba(0, 0, 0, 0) solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+.topanime-box img {
+    margin-bottom: -10px;
+}
+.ten-anime {
+    color: white;
+    background-color: rgba(18, 13, 13, 0.329) ;
+    top: 3px;
+    left: 3px ;
+    position: absolute;
+}
+.allanime-content {
+    display: flex;
+    position: relative;
+    border: 1px black solid ;
+    margin-left: 5px;
+    margin-right: 5px ;
+    margin-bottom: 10px ;
+    overflow: hidden;
+}
+.allanime-content img {
+    margin-bottom: -10px ;
+}
+.all-anime-name {
+    color: aliceblue;
+    position: absolute;
+    bottom: 5px ;
+    left: 10px ;
+}
+.box-xemthem{
+    border: 1px rgba(0, 0, 0, 0) solid ;
+    
+}
+.xemthem a {
+    border: 5px rgb(185, 2, 2) solid ;
+    font-size: 20px ;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(185, 2, 2);
+}
+.box-xemthem {
+    margin-top: 30px ;
+    
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.tieude {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 25px ;
+    margin-bottom: 10px ;
+}

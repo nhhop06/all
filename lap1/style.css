@@ -1,0 +1,38 @@
+
+.text-brown {
+color: blueviolet;
+}
+.font-large {
+  font-size: large 50 px;
+}
+.bg-green{
+  background-color: green;
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-color{
+  text-shadow: 2px 10px;
+}
+.decoration-none{
+  text-decoration: none;
+}
+.whitespace-wrap{
+  white-space: nowrap ;
+}
+  /*Text*/
+  links
+  list
+  image
+  font{
+    fo
+  } 
+  background
+  border
+  

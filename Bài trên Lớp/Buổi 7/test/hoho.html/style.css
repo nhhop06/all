@@ -1,0 +1,23 @@
+tr {
+    line-height: 30px ;
+}
+td {
+    border: 1px black solid;
+    padding: 10px;
+    padding-right:  40px ;
+}
+table {
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+th {
+    border: 1px black solid;
+}
+tbody tr:nth-child( odd ) {
+    background-color: aquamarine;
+
+}
+tbody tr:nth-child( even ) {
+    background-color: rgb(183, 246, 225);
+
+}

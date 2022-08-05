@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    /* Gioi han kich thuoc trong vung chua */
+    max-width: 100%;
+    /* Loai bo phan chan dong (khoang trang nho o duoi hinh anh) */
+    vertical-align: middle;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Loai bo khoang trong 2 cot ngoai cung */
+    margin-left: -5px;
+    margin-right: -5px;
+
+    /* Dat khoang trong giua cac hang */
+    row-gap: 10px;
+}
+
+.row > * {
+    /* Dat khoang trong giua cac cot */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-1 {
+    flex: 0 1 8.333333%;
+}
+
+.col-2 {
+    flex: 0 1 16.666667%;
+}
+
+.col-3 {
+    flex: 0 1 25%;
+}
+
+.col-4 {
+    flex: 0 1 33.333333%;
+}
+
+.col-5 {
+    flex: 0 1 41.666667%;
+}
+
+.col-6 {
+    flex: 0 1 50%;
+}
+
+.col-7 {
+    flex: 0 1 58.333333%;
+}
+
+.col-8 {
+    flex: 0 1 66.666667%;
+}
+
+.col-9 {
+    flex: 0 1 75%;
+}
+
+.col-10 {
+    flex: 0 1 83.333333%;
+}
+
+.col-11 {
+    flex: 0 1 91.666667%;
+}
+
+.col-12 {
+    flex: 0 1 100%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.intro-heading {
+    font-size: 60px;
+}
+
+/* Grid System - .row/.col-x */
+/* Flex Utilities */
+
+/* Position */
+/* Ket hop position vs hover */
+a {
+    text-decoration: none;
+    color: black;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mini-menu {
+    border: 1px solid black ;
+    margin-left: 15px ;
+    margin-right: 15px ;
+    padding: 10px ;
+    border-radius: 25px ;
+}
+img {
+    margin-bottom: 10px ;
+}
+.banner {
+    display: flex;
+    border: 1px rgba(0, 0, 0, 0) solid ;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    width: 220px ;
+}
+.box-foryou-big {
+    border: 1px rgba(0, 0, 0, 0) solid ;
+    width: 75% ;
+
+}
+.box-foryou-big img {
+    width: 100% ;
+    height: 260px ;
+}
+.box-foryou-small{
+    width: 25%;
+}
+.box-foryou-small img {
+    height: 80px ;
+    width: 100% ;
+}
+.box-foryou-under {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+    
+}
+.box-foryou-under img {
+    border: 1px solid black ;
+    width: 282.5px ;
+    height: 80px ;
+    
+}
+.tieude {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 25px ;
+    margin-bottom: 10px ;
+}
+.btn-play {
+  display: none;
+  border: 1px solid black;
+  background-color: rgba(128, 128, 128, 0.604);
+  border-radius: 70% ;
+  width: 40px ;
+  height: 40px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px ;
+  left: 10px ;
+}
+.btn-play:hover {
+  box-shadow:   0px  0px 10px rgb(255, 255, 255) ;
+  zoom: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.movie {
+    display: flex;
+    position: relative;
+    border: 1px solid black ;
+    overflow: hidden;
+}
+.movie:hover .btn-play{
+    display: block;
+}
+.movie:hover .anh-movie {
+    transform: scale(1.2);
+}
+.anh-movie {
+    margin-bottom: -10px ;
+}
+.movie-meta {
+    color: rgb(0, 0, 0);
+    width: 95% ;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 2px ;
+    left:5px ;
+}
+.ten-newep {
+    
+    display: flex;
+    position: absolute;
+    
+}
+.tieude-movie {
+    background-color: rgba(128, 128, 128, 0.355);
+    color: aliceblue;
+    bottom: 20px ;
+    left: 5px ;
+    display: flex;
+    position: absolute;
+}
+.news {
+    display: flex;
+}
+.new-content {
+    margin-bottom: -10px;
+}
+.news-pic {
+    margin-bottom: -10px ;
+    width: 80% ;
+}
+.top-pic {
+    width: 25% ;
+}
+.news:hover {
+    background-color: aliceblue;
+}
+.cartoon-pic {
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    border-radius: 35px 35px 15px 15px  ;
+    position: relative;
+    margin-left: 5px ;
+    margin-right: 5px ;   
+}
+.cartoon-pic img {
+    margin-bottom: -10px;
+}
+.cartoon-content {
+    color: aliceblue;
+    background-color: rgba(128, 128, 128, 0.396);
+    position: absolute;
+    bottom: 15px ;
+    left: 10px ;
+
+}
+.cartoon-list {
+    width: 100%;
+}
+.cartoon {
+    margin-bottom: 10px ;
+    display: flex;
+}
+.manga-ep {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    border-radius: 15px ;
+    overflow: hidden;
+    margin-left: 5px ;
+    margin-right: 5px ;
+}
+.manga-ep img {
+    margin-bottom: -10px ;
+}
+.collect {
+    border: 1px solid black ;
+}
+.collect-pic {
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    position: relative;
+    margin-left: 5px ;
+    margin-right: 5px ;
+}
+.collect-pic img {
+    margin-bottom: -10px ;
+}
+.cartoon-pic img {
+    margin-bottom: 10px ;
+}
+.manga-chap {    
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    overflow: hidden;
+    margin-left: 5px ;
+    margin-right: 5px ;
+}
+.bxh-pic {
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0) ;
+    position: relative;
+    margin-left: 5px ;
+    margin-right: 5px ;   
+}
+.topanime-box {
+    position: relative;
+    border: 1px rgba(0, 0, 0, 0) solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+.topanime-box img {
+    margin-bottom: -10px;
+}
+.ten-anime {
+    color: white;
+    background-color: rgba(18, 13, 13, 0.329) ;
+    top: 3px;
+    left: 3px ;
+    position: absolute;
+}
+.allanime-content {
+    display: flex;
+    position: relative;
+    border: 1px black solid ;
+    margin-left: 5px;
+    margin-right: 5px ;
+    margin-bottom: 10px ;
+    overflow: hidden;
+}
+.allanime-content img {
+    margin-bottom: -10px ;
+}
+.all-anime-name {
+    color: aliceblue;
+    position: absolute;
+    bottom: 5px ;
+    left: 10px ;
+}
+.box-xemthem{
+    border: 1px rgba(0, 0, 0, 0) solid ;
+    
+}
+.xemthem a {
+    border: 5px rgb(185, 2, 2) solid ;
+    font-size: 20px ;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(185, 2, 2);
+}
+.box-xemthem {
+    margin-top: 30px ;
+    
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
